@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة التسوق</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .cart-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+        .cart-item h3 {
+            color: #4CAF50;
+        }
+        .cart-item button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .cart-item button:hover {
+            background-color: #e53935;
+        }
+        .total {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        .checkout-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        .checkout-button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #45a049;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: static;
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>سلة التسوق</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات</a>
+            <a href="cart.html">سلة التسوق</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cart-item">
+            <h3>المنتج الأول</h3>
+            <p>السعر: $10</p>
+            <button>إزالة</button>
+        </div>
+        <div class="cart-item">
+            <h3>المنتج الثاني</h3>
+            <p>السعر: $20</p>
+            <button>إزالة</button>
+        </div>
+        <div class="total">
+            الإجمالي: $30
+        </div>
+        <button class="checkout-button">إتمام الشراء</button>
+    </div>
+    <footer>
+        &copy; 2024 جميع الحقوق محفوظة
+    </footer>
+</body>
+</html>
